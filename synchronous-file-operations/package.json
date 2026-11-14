@@ -1,0 +1,13 @@
+{
+  "name": "synchronous-file-operations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "syncFilesOs.js",
+  "scripts": {
+    "start": "node syncFilesOs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
