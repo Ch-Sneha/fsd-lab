@@ -1,5 +1,5 @@
-
 import fs from "fs";
+import http from "http";
 
 const data = "This is a sample text file created using synchronous file operations in Node.js.";
 
