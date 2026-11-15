@@ -1,8 +1,12 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import dns from "node:dns";
 
 dotenv.config();
+
+dns.setServers(["8.8.8.8"]);
+
 
 const PORT = process.env.PORT || 8000;
 const MONGODB_URI = process.env.MONGODB_URI;
