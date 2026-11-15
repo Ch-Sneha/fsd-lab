@@ -1,0 +1,13 @@
+{
+  "name": "asynchronous-file-operations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asyncFileOs.js",
+  "scripts": {
+    "start": "node asyncFileOs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

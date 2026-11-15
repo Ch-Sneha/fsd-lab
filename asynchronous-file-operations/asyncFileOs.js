@@ -1,4 +1,5 @@
 import fs from "fs";
+import http from "http";
 
 const Data1 = "This is a sample1 text file created using asynchronous file operations.";
 
@@ -52,3 +53,14 @@ fs.unlink(deletedFile, (err) => {
     );
 });
 */
+
+const PORT = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end("<h1>Asynchronous File Operations Running Successfully</h1>");
+});
+
+server.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
