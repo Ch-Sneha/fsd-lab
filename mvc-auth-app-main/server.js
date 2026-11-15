@@ -1,10 +1,12 @@
 import express from "express";
 import dotenv from "dotenv";
+import dns from "node:dns";
 import connectDB from "./config/db.js";
 import todoRoutes from "./routes/todoRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 
 dotenv.config();
+dns.setServers(["8.8.8.8"]);
 
 const app = express();
 const PORT = process.env.PORT || 9000;
