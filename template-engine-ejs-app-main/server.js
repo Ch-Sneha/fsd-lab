@@ -9,8 +9,10 @@ import {
   createProductForm,
 } from "./controllers/productController.js";
 import dotenv from "dotenv";
+import dns from "dns";
 import connectDB from "./config/db.js";
 
+dns.setServers(["8.8.8.8"]);
 dotenv.config();
 await connectDB(process.env.MONGO_URI, process.env.DB_NAME);
 const app = express();
