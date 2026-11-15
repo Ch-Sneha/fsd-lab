@@ -1,0 +1,13 @@
+{
+  "name": "url-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "url.js",
+  "scripts": {
+    "start":"node url.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
