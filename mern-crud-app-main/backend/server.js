@@ -1,9 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import dns from "dns";
 import cors from "cors";
 import morgan from "morgan";
 
+dns.setServers(["8.8.8.8"]);
 dotenv.config();
 const app = express();
 
