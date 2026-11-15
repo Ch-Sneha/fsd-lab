@@ -1,0 +1,13 @@
+{
+  "name": "student-http-json-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "student_http_json_server.js",
+  "scripts": {
+    "start":"node student_http_json_server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
