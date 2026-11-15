@@ -1,7 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
+import dns from "node:dns";
 import connectDB from "./config/db.js";
 import movieRoutes from "./routes/movieRoutes.js";
+
+
+dns.setServers(["8.8.8.8"]);
 
 dotenv.config();
 const PORT = process.env.PORT || 8000;
